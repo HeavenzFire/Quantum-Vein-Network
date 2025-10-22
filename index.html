@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum Vein Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <style>
+      body {
+        background-color: #0a0a1a;
+        color: #e0e0e0;
+        overflow: hidden;
+      }
+      .glow-text {
+        text-shadow: 0 0 5px rgba(118, 207, 255, 0.7), 0 0 10px rgba(118, 207, 255, 0.5);
+      }
+      .panel-bg {
+        background-color: rgba(10, 20, 40, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 191, 255, 0.3);
+      }
+       .log-entry::-webkit-scrollbar {
+        width: 4px;
+      }
+      .log-entry::-webkit-scrollbar-track {
+        background: rgba(0, 191, 255, 0.1);
+      }
+      .log-entry::-webkit-scrollbar-thumb {
+        background: rgba(0, 191, 255, 0.5);
+        border-radius: 2px;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "js-sha256": "https://aistudiocdn.com/js-sha256@^0.11.1"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
